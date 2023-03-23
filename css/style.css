@@ -1,0 +1,41 @@
+/******************************************
+/* CSS
+/*******************************************/
+
+/* Box Model Hack */
+*{
+  box-sizing: border-box;
+}
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+img{
+  display: block;
+  margin: 0 auto;
+  height: 200px;
+}
+
+.cocktails {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.drinkCard {
+  width: 20rem;
+  margin: 4rem;
+}
+
+h1 {
+  text-align: center;
+}
+
+.searchBox {
+  display: flex;
+  justify-content: center;
+  margin: auto;
+}
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
