@@ -24,6 +24,8 @@ function getDrink(){
     if(document.querySelector('input').value === null){
       alert("Sorry, the bartender is not familiar with the drink. Is there another drink that you'd like?");
     } else {
+      document.querySelector('.cocktails').innerHTML = '';
+
       data.drinks.forEach( cocktail => {
 
         const card = document.createElement('div');
@@ -38,6 +40,12 @@ function getDrink(){
         drinkImage.src = cocktail.strDrinkThumb;
         card.appendChild(drinkImage);
 
+        // create ingredients title
+        const drinkIngrTitle = document.createElement("div");
+        drinkIngrTitle.innerText = "Ingredients";
+        card.appendChild(drinkIngrTitle);
+
+        // create Instructions title
         const instructionsTitle = document.createElement('h3');
         instructionsTitle.innerText = "Instructions";
         card.appendChild(instructionsTitle);
